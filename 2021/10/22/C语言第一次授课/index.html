@@ -8,17 +8,20 @@
   <link rel="dns-prefetch" href="https://www.csdn.net">
   <title>C语言第一次授课 | Jollity&#39;s HackSpace</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="嵌入式协会C语言第一次授课内容 目录 C语言简介 C语言的编译过程 编译器的选择 解析你的第一个程序 学会定义变量以及给变量赋值  - 常用的变量类型  - 常见的符号分类  - 关键字  - 标识符  - 其他符号 ASCII码表 （*）学会使用debug调试代码   一、C语言简介二、C语言的编译过程三、HelloWorld.c四、变量的定义与赋值五、使用Debug进行代码调试">
+  <meta name="description" content="嵌入式技术协会C语言第一次授课">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语言第一次授课">
 <meta property="og:url" content="https://www.csdn.net/2021/10/22/C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8E%88%E8%AF%BE/index.html">
 <meta property="og:site_name" content="Jollity&#39;s HackSpace">
-<meta property="og:description" content="嵌入式协会C语言第一次授课内容 目录 C语言简介 C语言的编译过程 编译器的选择 解析你的第一个程序 学会定义变量以及给变量赋值  - 常用的变量类型  - 常见的符号分类  - 关键字  - 标识符  - 其他符号 ASCII码表 （*）学会使用debug调试代码   一、C语言简介二、C语言的编译过程三、HelloWorld.c四、变量的定义与赋值五、使用Debug进行代码调试">
+<meta property="og:description" content="嵌入式技术协会C语言第一次授课">
 <meta property="og:locale">
 <meta property="og:image" content="https://i.loli.net/2021/10/22/ZNWny2xjRV6o4uM.png">
+<meta property="og:image" content="https://i.loli.net/2021/10/23/2wSWsqgUexNkM6a.png">
 <meta property="article:published_time" content="2021-10-22T13:43:21.000Z">
-<meta property="article:modified_time" content="2021-10-22T14:14:46.270Z">
+<meta property="article:modified_time" content="2021-10-22T17:10:41.187Z">
 <meta property="article:author" content="Jollity">
+<meta property="article:tag" content="C">
+<meta property="article:tag" content="新手入门">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.loli.net/2021/10/22/ZNWny2xjRV6o4uM.png">
   
@@ -76,7 +79,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">About me</a>
     			
             
 		</nav>
@@ -164,7 +167,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="嵌入式协会C语言第一次授课内容"><a href="#嵌入式协会C语言第一次授课内容" class="headerlink" title=" 嵌入式协会C语言第一次授课内容"></a><img src="https://i.loli.net/2021/10/22/ZNWny2xjRV6o4uM.png" alt="qrs(rbg).png"> 嵌入式协会C语言第一次授课内容</h1><hr>
+        <h1 id="嵌入式技术协会C语言第一次授课"><a href="#嵌入式技术协会C语言第一次授课" class="headerlink" title=" 嵌入式技术协会C语言第一次授课"></a><img src="https://i.loli.net/2021/10/22/ZNWny2xjRV6o4uM.png" alt="qrs(rbg).png"> 嵌入式技术协会C语言第一次授课</h1><p></p>
+<span id="more"></span>
+<br></br>
+
 <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
 <li>C语言简介</li>
 <li>C语言的编译过程</li>
@@ -175,7 +181,18 @@
 <li><strong>（*）学会使用debug调试代码</strong></li>
 </ul>
 <hr>
-<h4 id="一、C语言简介"><a href="#一、C语言简介" class="headerlink" title="一、C语言简介"></a>一、C语言简介</h4><h4 id="二、C语言的编译过程"><a href="#二、C语言的编译过程" class="headerlink" title="二、C语言的编译过程"></a>二、C语言的编译过程</h4><h4 id="三、HelloWorld-c"><a href="#三、HelloWorld-c" class="headerlink" title="三、HelloWorld.c"></a>三、HelloWorld.c</h4><h4 id="四、变量的定义与赋值"><a href="#四、变量的定义与赋值" class="headerlink" title="四、变量的定义与赋值"></a>四、变量的定义与赋值</h4><h4 id="五、使用Debug进行代码调试"><a href="#五、使用Debug进行代码调试" class="headerlink" title="五、使用Debug进行代码调试"></a>五、使用Debug进行代码调试</h4>
+<h3 id="一、C语言简介"><a href="#一、C语言简介" class="headerlink" title="一、C语言简介"></a>一、C语言简介</h3><h3 id="二、C语言的编译过程"><a href="#二、C语言的编译过程" class="headerlink" title="二、C语言的编译过程"></a>二、C语言的编译过程</h3><p><img src="https://i.loli.net/2021/10/23/2wSWsqgUexNkM6a.png" alt="fc1.png"><p></p></p>
+<h5 id="在linux操作系统的命令行终端上对hello-c进行如下操作"><a href="#在linux操作系统的命令行终端上对hello-c进行如下操作" class="headerlink" title="在linux操作系统的命令行终端上对hello.c进行如下操作"></a>在linux操作系统的命令行终端上对hello.c进行如下操作</h5><ul>
+<li>1.预编译<br>  <code>gcc -E hello.c -o hello.i</code></li>
+<li>2.编译<br>  <code>gcc -S hello.i -o hello.s</code></li>
+<li>3.汇编<br>  <code>gcc -C hello.s -o hello.o</code></li>
+<li>4.链接<br>  <code>gcc hello.o -o hello</code></li>
+<li>5.运行程序<br>  <code>./hello</code><h5 id="运行结果如下"><a href="#运行结果如下" class="headerlink" title="运行结果如下"></a>运行结果如下</h5><br></br></li>
+</ul>
+<h3 id="三、HelloWorld-c"><a href="#三、HelloWorld-c" class="headerlink" title="三、HelloWorld.c"></a>三、HelloWorld.c</h3><p><strong>编写第一条C语言代码</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    char string[12] = &quot;Hello World&quot;;</span><br><span class="line">    printf(&quot;%s&quot;, string);</span><br><span class="line"></span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>ps: 注意事项</p>
+<h3 id="四、变量的定义与赋值"><a href="#四、变量的定义与赋值" class="headerlink" title="四、变量的定义与赋值"></a>四、变量的定义与赋值</h3><h3 id="五、使用Debug进行代码调试"><a href="#五、使用Debug进行代码调试" class="headerlink" title="五、使用Debug进行代码调试"></a>五、使用Debug进行代码调试</h3>
       
 
       
@@ -204,6 +221,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">新手入门</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -365,7 +397,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">About me</a></li>
       
         
     </ul>
@@ -384,6 +416,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">新手入门</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
